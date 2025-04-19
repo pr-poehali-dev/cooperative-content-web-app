@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { UserMenu } from "@/components/ui/user-menu";
 import { useAuth } from "@/contexts/AuthContext";
 import { UserRole } from "@/types";
-import { BookOpen, LayoutDashboard, Menu, MenuSquare, News, Plus, UserPlus, X } from "lucide-react";
+import { BookOpen, LayoutDashboard, Menu, MenuSquare, Newspaper, Plus, UserPlus, X } from "lucide-react";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -86,7 +86,7 @@ export function Header() {
               className="flex items-center gap-2 p-2 hover:bg-accent rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
-              <News className="h-4 w-4" />
+              <Newspaper className="h-4 w-4" />
               <span>Новости</span>
             </Link>
             <Link 
